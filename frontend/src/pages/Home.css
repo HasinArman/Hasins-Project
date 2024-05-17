@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --primary-color:#0b546e;
+    --secondary-color:#ffc135;
+    --tertiary-color:#df1c1c;
+    --text-dark:#212529;
+    --white:#ffffff;
+    --max-width:1200px;
+    --header-font-1:"Alfa Slab One", serif;
+    --header-font-2:"Bebas Neue", sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.section__container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section__header{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: var(--header-font-1);
+    color: var(--primary-color);
+    text-align: center;
+    line-height: 3.75;
+    text-shadow: 2px 2px;
+}
+.section__description{
+    font-weight: 500;
+    color: var(--text-dark);
+    line-height: 1.75rem;
+}
+.btn{
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--tertiary-color);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--primary-color);
+
+
+}
+img{
+    display: flex;
+    width: 100%;
+    
+}
+a{
+    text-decoration: none;
+    transition: .3s;
+}
+html,body{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Montserrat","sans-serif";
+}
+.header{
+    background-image: url('../Components/Assets/Header.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 726px;
+    background-repeat: no-repeat;
+}
+
+
+.header__container{
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+}
+.header__image img{
+    max-width: 600px;
+    border-radius: 10px;
+    margin-inline:auto ;
+    margin-top: 110px;
+}
+.header__content h2{
+    margin-top: 150px;
+    max-width: 400px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    font-family: var(--header-font-2);
+    color: var(--primary-color);
+    border: 2px dashed var(--primary-color);
+    text-align: center;
+}
+.header__content h1{
+    font-size: 4.5rem;
+    font-weight: 500;
+    font-family: var(--header-font-1);
+    color: var(--primary-color);
+    line-height: 3.5rem;
+    text-align: center;
+    text-shadow: 2px 2px var(--white);
+}
+.header__content h1 span{
+    font-size: 3rem;
+}
+
+
+
+@media (width>768px) {
+ 
+    .header__container{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+    .header__image{
+        grid-area: 1/2/2/3;
+    }
+    .header__content h2{
+        margin-inline-start: unset;
+    }
+    .header__content h1{
+        text-align: left;
+    }
+   
+}
+@media(width>1024){
+    .order__grid{
+        gap: 2rem;
+    }
+}

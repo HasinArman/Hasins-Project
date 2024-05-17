@@ -1,0 +1,72 @@
+/* Center the content */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  /* Style for the select box */
+  .select-box {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the SVG container */
+  .svg-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effect */
+  .svg-container:hover {
+    box-shadow: 0 8px 16px rgba(2, 112, 118, 0.2);
+  }
+  
+  /* Tooltip style */
+  .tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    pointer-events: none;
+    font-size: 12px;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+  }
+  
+  /* Chart description styles */
+  .chart-description {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+  }
+  
+  .chart-description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .chart-description p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  .chart-description .axis-label {
+    font-weight: bold;
+    color: #333;
+  }
+  .chart-description:hover {
+    box-shadow: 0 8px 16px rgba(2, 112, 118, 0.2);
+    
+  }
